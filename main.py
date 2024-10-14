@@ -80,8 +80,6 @@ class Star_Cinema(Hall):
         super().__init__(rows, cols, hall_no)
         self.hall_list.append(self)
 
-
-
 def book_shows():
     id = str(input('Enter show ID: '))
     cinema.hall_list[0].__book_seats__(id)
@@ -114,6 +112,7 @@ def input_show_entry(id = '', name = '', time = ''):
     time = time or str(input('Enter show time: '))
     cinema.hall_list[0].__entry_show__(id, name, time)
     init_counter()
+
 def add_hall():
     rows = int(input('add hall rows: '))
     cols = int(input('add hall cols: '))
@@ -132,8 +131,4 @@ def init_counter():
 cinema = Star_Cinema()
 cinema.__entry_hall__(5, 5, 11)
 input_show_entry('111', 'Moana_2', '4pm')
-# add_hall()
 init_counter()
-# input_show_entry()
-# checkAvailableSeats()
-# book_shows()
