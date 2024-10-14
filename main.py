@@ -130,7 +130,7 @@ def init_counter():
         input_show_entry()    
 
 cinema = Star_Cinema()
-cinema.__entry_hall__(2, 5, 11)
+cinema.__entry_hall__(5, 5, 11)
 input_show_entry('111', 'Moana_2', '4pm')
 # add_hall()
 init_counter()
