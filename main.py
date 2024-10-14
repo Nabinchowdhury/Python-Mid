@@ -66,7 +66,8 @@ class Hall:
         if id not in self.seats:
             print('please add a valid id')
             return checkAvailableSeats()
-        print(self.seats[id])
+        for seats in self.seats[id]:
+            print(seats)
 
     def __view_show_list__(self):
         print('hall no : ', self.hall_no, ', Shows available: ', self.show_list)
